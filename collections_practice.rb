@@ -70,7 +70,7 @@ end
 elements = [{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
 
 def count_elements(elements)
-elements.group_by { |element| element(:name)}
+elements.group_by { |element| element[:name]}
 end
 
 count_elements(elements)
